@@ -1,0 +1,39 @@
+{
+    "name": "phlak/commonmark-rewrite-local-image-urls",
+    "description": "CommonMark extension for rewriting local, relatiave image URLs to absolute URLs",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Kankiewicz",
+            "email": "Chris@Kankiewicz.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/PHLAK/commonmark-rewrite-local-image-urls/issues"
+    },
+    "require": {
+        "league/commonmark": "^2.0"
+    },
+    "require-dev": {
+        "phlak/coding-standards": "^5.0",
+        "phpstan/phpstan": "^2.2",
+        "phpunit/phpunit": "^13.2",
+        "symfony/var-dumper": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHLAK\\CommonMarkExtensions\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "platform-check": true,
+        "sort-packages": true
+    }
+}

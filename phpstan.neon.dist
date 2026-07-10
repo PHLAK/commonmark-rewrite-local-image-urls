@@ -1,0 +1,19 @@
+parameters:
+  level: max
+  paths: [src, tests]
+
+  tmpDir: .cache/phpstan
+
+  checkFunctionNameCase: true
+  treatPhpDocTypesAsCertain: false
+
+  exceptions:
+    implicitThrows: false
+
+    check:
+      missingCheckedExceptionInThrows: true
+      tooWideThrowType: true
+
+    uncheckedExceptionClasses:
+      - League\CommonMark\Exception\AlreadyInitializedException
+      - RuntimeException
