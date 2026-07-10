@@ -17,3 +17,7 @@ parameters:
     uncheckedExceptionClasses:
       - League\CommonMark\Exception\AlreadyInitializedException
       - RuntimeException
+
+  ignoreErrors:
+    - message: /^Method .+ throws checked exception League\\CommonMark\\Exception\\CommonMarkException but it's missing from the PHPDoc @throws tag\.$/
+      path: tests/*
